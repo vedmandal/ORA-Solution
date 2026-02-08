@@ -1,0 +1,174 @@
+/* 1. Global Reset & Wrapper */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif; /* High-end professional font */
+}
+
+.auth-wrapper {
+  background-color: #0f172a; /* Deep dark background for the whole page */
+  min-height: 100vh;
+}
+
+/* 2. Main Container (The Box) */
+.main-container {
+  width: 1000px;
+  max-width: 95%;
+  height: 650px;
+  border-radius: 28px;
+  background: #1a1625; /* The specific dark purple in your image */
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* 3. Left Side: Image Section */
+.left-side {
+  background: linear-gradient(rgba(30, 27, 75, 0.3), rgba(30, 27, 75, 0.3)), 
+              url('https://images.unsplash.com/photo-1542281286-9e0a16bb7366?auto=format&fit=crop&q=80&w=1000');
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px 0 0 24px;
+}
+
+/* 4. Custom Inputs (Dark Gray/Purple) */
+.bg-dark-purple {
+  background-color: #1a1625 !important;
+}
+
+.custom-input {
+  background-color: #2a2536; /* Lighter purple-gray for inputs */
+  border: 1px solid #3a344d;
+  border-radius: 12px;
+  padding: 15px 20px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.custom-input::placeholder {
+  color: #6b7280;
+}
+
+.custom-input:focus {
+  border-color: #6366f1; /* Bright violet highlight */
+  background-color: #2d283d;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+/* 5. Custom Primary Button */
+.btn-primary-custom {
+  background-color: #6366f1; /* The exact violet button color */
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: transform 0.1s active;
+}
+
+.btn-primary-custom:hover {
+  background-color: #4f46e5;
+  transform: translateY(-1px);
+}
+
+/* 6. Social Buttons & Separator */
+.custom-social-btn {
+  border: 1px solid #3a344d;
+  background: transparent;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.custom-social-btn:hover {
+  background-color: #2a2536;
+  border-color: #4b5563;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6b7280;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #3a344d;
+}
+
+.separator:not(:empty)::before { margin-right: 1em; }
+.separator:not(:empty)::after { margin-left: 1em; }
+
+/* 7. Typography & Links */
+.text-primary-custom {
+  color: #818cf8; /* Light violet for links */
+}
+
+.dot {
+  height: 6px;
+  width: 24px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.dot.active {
+  background-color: #ffffff;
+  width: 48px;
+}
+
+
+.btn-primary-custom {
+  background-color: #6366f1 !important; /* Bright violet */
+  color: white !important;             /* Force white text */
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 15px 20px !important;       /* This ensures height is visible */
+  font-weight: 600 !important;
+  width: 100% !important;              /* Ensures it spans the form width */
+  display: block !important;           /* Prevents collapse */
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: #4f46e5 !important;
+  transform: translateY(-1px);
+}
+
+/* 6. Social Buttons - FIXED VISIBILITY */
+.custom-social-btn {
+  border: 1px solid #3a344d !important;
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border-radius: 12px !important;
+  padding: 12px !important;            /* Ensures height */
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  display: flex !important;            /* For Icon + Text centering */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+.text-primary-custom {
+  color: #818cf8 !important;
+  font-weight: bold;
+  text-decoration: none;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+
+.bg-dark-purple {
+  background-color: #1a1625 !important;
+  padding: 40px !important;
+}
