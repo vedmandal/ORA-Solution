@@ -11,7 +11,7 @@ const RegisterPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await API.post("/register", formData);
+      const res = await API.post("/api/auth/register", formData);
       if (res.data.success) {
         toast.success("Account Created! Please Login.");
         navigate("/login");

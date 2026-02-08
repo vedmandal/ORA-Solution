@@ -11,7 +11,7 @@ const LoginPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await API.post("/login", formData);
+      const res = await API.post("/api/auth/login", formData);
       
       if (res.data.success) {
         toast.success("Login Successful!");
